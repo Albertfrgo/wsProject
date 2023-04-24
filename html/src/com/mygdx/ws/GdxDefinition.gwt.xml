@@ -8,6 +8,9 @@
 	<inherits name='com.badlogic.gdx.ai' />
 	<inherits name='com.badlogic.ashley_gwt' />
 	<inherits name='Box2DLights' />
+	<inherits name='com.github.czyzby.websocket.GdxWebSocketGwt' />
+	<inherits name='com.github.czyzby.websocket.GdxWebSocket' />
+
 
 	<inherits name='wsProject' />
 	<entry-point class='com.mygdx.ws.client.HtmlLauncher' />

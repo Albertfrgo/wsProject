@@ -5,11 +5,13 @@ import org.robovm.apple.uikit.UIApplication;
 
 import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
+import com.github.czyzby.websocket.CommonWebSockets;
 import com.mygdx.ws.wsProject;
 
 public class IOSLauncher extends IOSApplication.Delegate {
     @Override
     protected IOSApplication createApplication() {
+        CommonWebSockets.initiate();
         IOSApplicationConfiguration config = new IOSApplicationConfiguration();
         return new IOSApplication(new wsProject(), config);
     }

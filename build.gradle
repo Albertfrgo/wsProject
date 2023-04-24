@@ -30,6 +30,7 @@ allprojects {
         ashleyVersion = '1.7.4'
         aiVersion = '1.8.2'
         gdxControllersVersion = '2.2.1'
+        wsVersion = '1.9.10.3'
     }
 
     repositories {
@@ -55,6 +56,7 @@ project(":desktop") {
         api "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
         api "com.badlogicgames.gdx-controllers:gdx-controllers-desktop:$gdxControllersVersion"
         api "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+        api "com.github.MrStahlfelge.gdx-websockets:common:$wsVersion"
         
     }
 }
@@ -90,6 +92,7 @@ project(":android") {
         api "com.badlogicgames.gdx:gdx-ai:$aiVersion"
         api "com.badlogicgames.ashley:ashley:$ashleyVersion"
         api "com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion"
+        api "com.github.MrStahlfelge.gdx-websockets:common:$wsVersion"
         
     }
 }
@@ -133,6 +136,9 @@ project(":html") {
         api "com.badlogicgames.gdx:gdx-ai:$aiVersion:sources"
         api "com.badlogicgames.ashley:ashley:$ashleyVersion:sources"
         api "com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion:sources"
+        api "com.github.MrStahlfelge.gdx-websockets:core:$wsVersion:sources"
+        api "com.github.MrStahlfelge.gdx-websockets:html:$wsVersion"
+        api "com.github.MrStahlfelge.gdx-websockets:html:$wsVersion:sources"
         
     }
 }
@@ -150,6 +156,7 @@ project(":core") {
         api "com.badlogicgames.gdx:gdx-ai:$aiVersion"
         api "com.badlogicgames.ashley:ashley:$ashleyVersion"
         api "com.badlogicgames.box2dlights:box2dlights:$box2DLightsVersion"
+        api "com.github.MrStahlfelge.gdx-websockets:core:$wsVersion"
         
     }
 }
